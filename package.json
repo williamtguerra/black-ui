@@ -1,0 +1,11 @@
+{
+  "name": "black-ui",
+  "theme": "ui",
+  "version": "0.0.0",
+  "description": "Minimal black UI theme",
+  "repository": "https://github.com/williamtguerra/black-ui",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
