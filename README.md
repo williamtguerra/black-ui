@@ -2,7 +2,11 @@
 
 Minimal black UI theme for Atom.
 
-![](https://raw.githubusercontent.com/williamtguerra/black-ui/master/screenshot.png)
+Still working on it. I would not use it yet if I were you.
+
+The darker alternative to my [white](https://atom.io/packages/white-ui) theme.
+
+<!-- ![](https://raw.githubusercontent.com/williamtguerra/black-ui/master/screenshot.png) -->
 
 * No rounded corners
 * No bevels
