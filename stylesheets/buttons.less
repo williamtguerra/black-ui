@@ -25,6 +25,12 @@
   @selected: @color;
   @border: @color;
   .btn-background(@bg, @hover, @selected, @border, @text-color-selected, @text-color-selected);
+  color: @base-background-color;
+  &:hover {
+      border: 1px solid @color;
+      color: @color;
+      background: @base-background-color;
+  }
 }
 
 .btn {
@@ -32,7 +38,6 @@
   .btn-background(@button-background-color, @button-background-color-hover, @button-background-color-selected, @button-border-color, @text-color, @text-color-highlight);
   .selected {
     background: @text-color-subtle;
-    border: 1px solid #000;
   }
 }
 
