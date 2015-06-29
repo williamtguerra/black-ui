@@ -1,8 +1,13 @@
 @import "ui-variables";
 @import "ui-mixins";
 
-atom-text-editor{
+atom-text-editor {
   color: @text-color;
+
+  &::shadow {
+    // atom is an idiot
+    cursor: default;
+  }
 
   .gutter {
     margin-right: 100px;
