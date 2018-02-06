@@ -1,10 +1,10 @@
-@import "ui-variables";
-@import "ui-mixins";
+@import 'ui-variables';
+@import 'ui-mixins';
 
 atom-text-editor {
   color: @text-color;
 
-  &::shadow {
+  &.editor {
     // atom is an idiot
     cursor: default;
   }
@@ -27,30 +27,40 @@ atom-text-editor.mini {
   color: @text-color;
   background-color: @input-background-color;
   border: 1px solid @input-border-color;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   border-radius: @component-border-radius;
   padding-left: @component-padding/2;
 
-  .cursor { border-color: #fff; }
-  .selection .region { background-color: rgba(0, 0, 0, .2); }
+  .cursor {
+    border-color: #fff;
+  }
+  .selection .region {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
 }
 
 atom-text-editor.mini.is-focused {
   background-color: lighten(@input-background-color, 5%);
-  .selection .region { background-color: @base-background-color; }
+  .selection .region {
+    background-color: @base-background-color;
+  }
 }
 
 // FIXME: these should go in syntax themes?
 atom-text-editor.gutter {
-    color: @text-color;
-    margin-right: 6px;
-    background: @base-background-color;
-    border-right: 1px solid @base-border-color;
+  color: @text-color;
+  margin-right: 6px;
+  background: @base-background-color;
+  border-right: 1px solid @base-border-color;
 }
 
 @-webkit-keyframes highlight {
-  from { background-color: @base-background-color; }
-  to { background-color: null; }
+  from {
+    background-color: @base-background-color;
+  }
+  to {
+    background-color: null;
+  }
 }
 
 atom-text-editor.highlighted.selection .region {
